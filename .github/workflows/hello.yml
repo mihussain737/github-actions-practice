@@ -1,0 +1,16 @@
+# workflow
+# Should have name
+name: Hello
+
+on:
+  workflow_dispatch:
+
+# Jobs
+# Should be at the root level of the workflow (0 spaces)
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    # Steps => what this job will run (inside the specific job)
+    steps:
+      - name: Say hello to everyone
+        run: echo "Hello World From Github Actions!"
